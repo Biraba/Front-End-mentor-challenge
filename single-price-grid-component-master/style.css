@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: "karla",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Light-Gray);
+    height: 100vh;
+}
+main{
+    margin:  2rem;
+    display: grid ;
+    grid-template-columns: 1fr;
+}
+.wrapper {
+    padding: 1.5rem 1.8rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+}
+.intro {
+    background: white;
+   
+}
+.monthly-subs {
+    background: var(--Cyan);
+    
+}
+.why-us {
+    background: hsl(179, 62%, 43%,0.5);
+}
+
+.intro .intro-title {
+  
+    color: var(--Cyan);
+    font-weight: 700;
+}
+.intro .money-back {
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    font-size: .9rem;
+}
+.intro .para {
+   
+    line-height: 1.7;
+    font-size: .8rem;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+.monthly-subs .intro-title {
+    color: var(--Light-Gray);
+}
+.monthly-subs .per-month {
+   
+    display: flex;
+    align-items: center;
+}
+.monthly-subs .per-month span {
+    font-size: 2rem;
+    color: var(--Light-Gray);
+    margin-right: .6rem;
+}
+.monthly-subs .per-month p {
+    color: light-green;
+    opacity: .4;
+}
+.monthly-subs .para {
+    color: var(--Light-Gray);
+}
+.monthly-subs .btn {
+    color: var(--Light-Gray);
+    background: var(--Bright-Yellow);
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05),0 6px 6px
+    rgba(0, 0, 0, 0.1);
+}
+.why-us .intro-title {
+    color: var(--Light-Gray);
+}
+.why-us ul {
+    color: var(--Light-Gray);
+    line-height: 1.5;
+    font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 35rem;
+    }
+    .intro {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
