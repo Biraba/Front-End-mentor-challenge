@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+html {
+    color-scheme: dark light;
+}
+body {
+    font-size: 15px;
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    background: var(--Very-Light-Gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    /* border: 1px solid black; */
+    margin: 2rem ;
+    /* max-width: 50rem; */
+}
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.wrapper {
+   
+    max-width: 24rem;
+    /* margin: 2rem; */
+    padding: 1.5rem;
+    background: white;
+    border-radius: .5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05),0 6px 6px
+    rgba(0, 0, 0, 0.1);
+}
+main .title {
+   font-size: 1.4rem;
+   margin-bottom: .6rem;
+}
+.title span {
+    font-weight: 200;
+}
+
+p{
+    font-weight: 400;
+    color: gray;
+}
+.main-para {
+    margin-bottom: 4rem;
+}
+.img-container{
+    display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.img-container img {
+    width: 3rem;
+}
+article  {
+    margin-bottom: 1rem;
+    
+}
+
+.cyan-bd {
+    border-top: 4px solid var(--Cyan);
+    order: 1;
+}
+.red-bd{
+    border-top: 4px solid var(--Red);
+    order: 2;
+}
+.orange-bd {
+    border-top: 4px solid var(--Orange); 
+    order: 3;
+}
+.blue-bd {
+    border-top: 4px solid var(--Blue); 
+    order: 4; 
+}
+
+@media (width >= 1440px){
+   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+    main {
+    align-items: center;
+   }
+    main .title {
+        
+        width: 20ch;
+        margin: 0 auto;
+    }
+    main .main-para{
+        width: 55ch;
+        margin: .5rem auto;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       flex-wrap: wrap;
+       gap: 1rem;
+       margin-top: 4rem;
+       max-width: 1440px;
+    }
+    .orange-order {
+        order: 4;
+    }
+    .cyan-bd {
+        transform:  translateY(6.5rem);
+        
+    }
+    .blue-bd {
+        transform:  translateY(6.5rem);
+    }
+}
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
