@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,500&family=Raleway:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    
+    <main>
+      <div class="card1">
+        <img src="./images/logo.svg" alt="" />
+        <div class="folder-container">
+          <div>
+            <img src="./images/icon-document.svg" alt="" />
+          </div>
+          <div>
+            <img src="./images/icon-folder.svg" alt="" />
+          </div>
+          <div>
+            <img src="./images/icon-upload.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- end of card1 -->
+
+      <div class="storage-card">
+          <div class="storage-inner">
+        <p>You’ve used <span>815 GB</span> of your storage</p>
+        <div class="progressbar-container">
+          <div class="progress">
+            <div class="slider-thumb"></div>
+          </div>
+        </div>
+        <ul>
+          <li>0 GB</li>
+          <li>1000 GB</li>
+        </ul>
+        <div class="Gb-remain"><span>185</span>GB Left</div>
+      </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">BBA</a>.
+    </div>
+  </body>
+</html>
